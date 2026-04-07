@@ -1,13 +1,86 @@
-# Market-Segmentation-PCA
+# Smart Cart Customer Clustering
 
 ## Project Overview
 
-This project performs customer analysis and clustering on retail transaction data using a sample dataset (`smartcart_customers (1).csv`).
+This project performs customer segmentation analysis on retail transaction data using machine learning techniques. The analysis includes data preprocessing, feature engineering, PCA for dimensionality reduction, and K-means clustering to identify distinct customer segments.
 
-Goals:
-- Clean and preprocess customer data
-- Engineer features for customer value and behavior
-- Use PCA for dimensionality reduction and exploration
+## Features
+
+- **Data Preprocessing**: Handling missing values, feature engineering, and data transformation
+- **Exploratory Analysis**: Correlation analysis and distribution visualization
+- **Dimensionality Reduction**: PCA to reduce features while preserving variance
+- **Customer Segmentation**: K-means clustering to identify 4 customer segments:
+  - Married Budgeters
+  - Premium High-Spenders
+  - Young Singles/Browsers
+  - Established Mature Families
+- **Interactive Visualization**: 3D scatter plots and pairwise comparisons
+
+## Streamlit App
+
+A Streamlit web application is available to interactively explore the customer segments.
+
+### Live Demo
+
+🚀 **[View Live Demo](https://smart-cart-customer-clustering.streamlit.app/)**
+
+Experience the interactive customer segmentation analysis with 3D visualizations, cluster distributions, and PCA insights.
+
+### Local Development
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Open your browser to `http://localhost:8501`
+
+### Deployment on Streamlit Cloud
+
+1. Create a GitHub repository and upload the following files:
+   - `app.py`
+   - `requirements.txt`
+   - `smartcart_customers (1).csv`
+   - `README.md` (optional)
+
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+
+3. Connect your GitHub account and select the repository
+
+4. Deploy the app
+
+## Dataset
+
+The dataset (`smartcart_customers (1).csv`) contains customer demographic and transaction data including:
+- Demographic information (age, education, marital status, income)
+- Purchase history across different product categories
+- Engagement metrics (web visits, recency, response to campaigns)
+
+## Methodology
+
+1. **Data Cleaning**: Impute missing values using KNN imputation
+2. **Feature Engineering**: Create total spending, total purchases, age, and tenure features
+3. **Transformation**: Apply log transformations to reduce skewness
+4. **Encoding**: Label encode education and one-hot encode marital status
+5. **Scaling**: Standardize features for PCA
+6. **PCA**: Reduce dimensionality while retaining 90% of variance
+7. **Clustering**: Apply K-means with 4 clusters
+8. **Visualization**: 3D scatter plots and pair plots for segment exploration
+
+## Dependencies
+
+- streamlit
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- plotly
 - Apply clustering (K-Means) to identify customer segments
 - Visualize results in 2D/3D and interpret each cluster
 
