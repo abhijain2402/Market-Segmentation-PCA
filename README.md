@@ -22,7 +22,7 @@ A Streamlit web application is available to interactively explore the customer s
 
 ### Live Demo
 
-🚀 **[View Live Demo](https://smart-cart-customer-clustering.streamlit.app/)**
+🚀 **[View Live Demo](https://market-segmentation-pca-kuabxqmptlx5au69dkwshm.streamlit.app/)**
 
 Experience the interactive customer segmentation analysis with 3D visualizations, cluster distributions, and PCA insights.
 
